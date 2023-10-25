@@ -36,6 +36,9 @@ app.use(cors());
 app.use(xss());
 
 // Routes
+app.get('/', (req, res) => {
+  res.json({ message: 'Job API' });
+});
 app.use('/api/v1/auth', authRouter);
 // Making the route protected by adding middleware
 app.use('/api/v1/jobs', authMiddleware, jobsRouter);
