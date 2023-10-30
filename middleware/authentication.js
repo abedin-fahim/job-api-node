@@ -1,5 +1,5 @@
 const { StatusCodes } = require('http-status-codes');
-const User = require('../models/User');
+// const User = require('../models/User');
 const jwt = require('jsonwebtoken');
 
 const authMiddleware = (req, res, next) => {
